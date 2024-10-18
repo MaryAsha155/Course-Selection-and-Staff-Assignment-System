@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection and Teacher Assignment System</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        nav {
+            background-color: sagegreen;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            font-size: 12px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 8px;
+        }
+        nav ul li a:hover {
+            background-color: lightgray;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 18px;
+        }
+        h2 {
+            font-size: 17px;
+        }
+        h3 {
+            font-size: 16px;
+        }
+        section {
+            padding: 20px;
+        }
+        #courses ul {
+            list-style-type: none;
+        }
+        #teachers .teacher-btn {
+            background-color: sagegreen;
+            border: none;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        #teachers .teacher-btn:hover {
+            background-color: darksagegreen;
+        }
+        .form-group {
+            margin: 10px 0;
+        }
+        input, select, textarea {
+            font-size: 12px;
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        .center {
+            text-align: center;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Pane -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#teachers">Teachers</a></li>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Course Selection and Teachers' Assignment Selection</h1>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p class="center">This is about us.</p>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <h3>Courses</h3>
+        <div class="bold center">Theory</div>
+        <ul>
+            <li>Subject 1</li>
+            <li>Subject 2</li>
+            <li>Subject 3</li>
+            <li>Subject 4</li>
+            <li>Subject 5</li>
+            <li>Subject 6</li>
+            <li>Subject 7</li>
+        </ul>
+        <div class="bold center">Lab</div>
+        <ul>
+            <li>Lab 1</li>
+            <li>Lab 2</li>
+            <li>Lab 3</li>
+            <li>Lab 4</li>
+        </ul>
+    </section>
+
+    <!-- Teachers Section -->
+    <section id="teachers">
+        <h3>Professors</h3>
+        <div class="center">
+            <button class="teacher-btn">Teacher 1</button>
+            <button class="teacher-btn">Teacher 2</button>
+            <button class="teacher-btn">Teacher 3</button>
+            <button class="teacher-btn">Teacher 4</button><br>
+            <button class="teacher-btn">Teacher 5</button>
+            <button class="teacher-btn">Teacher 6</button>
+            <button class="teacher-btn">Teacher 7</button>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration">
+        <h3>Registration</h3>
+        <form>
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label>Department:</label>
+                <input type="text" placeholder="Enter your department">
+            </div>
+            <div class="form-group">
+                <label>Registration Number:</label>
+                <input type="text" placeholder="Enter your registration number">
+            </div>
+            <div class="form-group">
+                <label>Theory Courses:</label>
+                <select>
+                    <option>Subject 1</option>
+                    <option>Subject 2</option>
+                    <option>Subject 3</option>
+                    <option>Subject 4</option>
+                    <option>Subject 5</option>
+                    <option>Subject 6</option>
+                    <option>Subject 7</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Lab Courses:</label>
+                <select>
+                    <option>Lab 1</option>
+                    <option>Lab 2</option>
+                    <option>Lab 3</option>
+                    <option>Lab 4</option>
+                </select>
+            </div>
+        </form>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us">
+        <h3>Contact Us</h3>
+        <p class="center">Please reach out to us at contact@example.com</p>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback">
+        <h3>Feedback</h3>
+        <form>
+            <div class="form-group">
+                <label>Select Teacher:</label>
+                <select>
+                    <option>Teacher 1</option>
+                    <option>Teacher 2</option>
+                    <option>Teacher 3</option>
+                    <option>Teacher 4</option>
+                    <option>Teacher 5</option>
+                    <option>Teacher 6</option>
+                    <option>Teacher 7</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Feedback:</label>
+                <textarea placeholder="Submit your feedback"></textarea>
+            </div>
+        </form>
+    </section>
+
+    <script>
+        // Optional smooth scrolling script for navigation
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
